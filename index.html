@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+          }
+        .navbar{
+            background-color: #1db954;
+            display:flex;
+            top:0;
+            gap: 40px;
+            justify-content: center;
+            padding: 15px 0;
+            top: 0;
+        }
+        .navbar a{
+            color:white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+        }
+        .navbar a:hover{
+            background-color: white;
+            color: #1db954;
+            border-radius: 6px;
+        }
+        .cards{
+            margin: 20px;
+            display: flex;
+            gap:20px;
+        }
+        .card{
+            background-color: #181818;
+            padding: 15px;
+            border-radius: 10px;
+            width: 140px;
+        }
+        .card img{
+            width: 100%;
+            border-radius: 8px;
+            border:2px solid grey;
+            height: 140px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card p {
+            font-size: 14px;
+            color: rgb(173, 172, 169);
+            overflow-wrap: break-word;
+          }
+          
+        .image:hover {
+            transform: scale(1.05);
+        }
+        .image img{
+                width: 150px;         
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover; 
+                border: 2px solid #fff; 
+              } 
+        .image p{
+            font-size: 14px;
+            color: rgb(173, 172, 169);
+        }      
+    </style>
+</head>
+<body>
+    <div>
+        <div class="navbar">
+        <a href="#trending">Trending</a>
+        <a href="#artists">Artists</a>
+        <a href="#albums">Albums</a>
+        <a href="#radio">Radio</a>
+        <a href="#charts">Charts</a>
+      </div>
+      <main>
+        <div class="main">
+            <div class="section" id="trending">
+                <h2>Trending Songs</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="aot.jpg">
+                        <h4 >Attack on Titan</h4>
+                        <p>Song by Mika Kobayashi and SawanoHiroyuki[nZk] ‧ 2013</p>
+                    </div>
+                    <div class="card">
+                        <img src="aot2.jpg">
+                        <h4>Attack on Titan</h4>
+                        <p>Call your name
+                            Mpi · 2013</p>
+                    </div>
+                    <div class="card">
+                        <img src="aot3.jpg">
+                        <h4>Attack on Titan</h4>
+                        <p>Song by Mika Kobayashi ‧ 2013</p>
+                    </div>
+                    <div class="card">
+                        <img src="aot4.jpg">
+                        <h4>Attack on Titan</h4>
+                        <p>Call your name
+                            Mpi · 2013</p>
+                    </div>
+                    <div class="card">
+                        <img src="aot5.jpg">
+                        <h4>Attack on Titan</h4>
+                        <p>Song by Mika Kobayashi and SawanoHiroyuki[nZk] ‧ 2013</p>
+                    </div>
+                    <div class="card">
+                        <img src="aot6.png">
+                        <h4>Attack on Titan</h4>
+                        <p> Vogel im Käfig ‧ 2013</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="section" id="artists">
+                <h2>Popular Artists</h2>
+                <div class="cards">
+                    <div class="image">
+                        <img src="tamna2.png">
+                        <h4>Tamna Tamna </h4>
+                        <p>Solace Her</p>
+                    </div>
+                    <div class="image">
+                        <img src="tamna3.png">
+                        <h4>D. Elangbam</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="mee4.png">
+                        <h4>Meewakching</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="mee5.png">
+                        <h4>Meewakching</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="mee6.png">
+                        <h4>Innocent Eyes</h4>
+                        <p>Artist</p>
+                    </div>
+                    <div class="image">
+                        <img src="mee7.png">
+                        <h4>Innocent Eyes</h4>
+                        <p>Artist</p>
+                    </div>
+                      
+                </div>
+            </div>
+            <div class="section" id="albums">
+                <h2>Popular albums and singles</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="tu.png">
+                        <h4>Tu Pac</h4>
+                        <p>All Eyes On Me</p>
+                    </div>
+                    <div class="card">
+                        <img src="50.png">
+                        <h4>50 Cent</h4>
+                        <p>Many Men</p>
+                    </div>
+                    <div class="card">
+                        <img src="dre.png">
+                        <h4>Dr.Dre</h4>
+                        <p>Bang Bang</p>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="em.png">
+                        <h4>Eminem</h4>
+                        <p>Moking Bird</p>
+                    </div>
+                    <div class="card">
+                        <img src="snoop.png">
+                        <h4>Snoop Dog</h4>
+                        <p>Young, Wild & Free
+                            Song by Snoop Dogg and Wiz Khalifa ‧ 2011</p>
+                    </div>
+                    <div class="card">
+                        <img src="nelly.png">
+                        <h4>Nelly</h4>
+                        <p>dilemma</p>
+                    </div>
+                    <div class="card">
+                        <img src="beo.png">
+                        <h4>Beyonce</h4>
+                        <p>Say My Name
+                            Song by Destiny's Child ‧ 1999
+                            O</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="radio">
+                <h2>Popular radio</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="ronaldo.png">
+                        <p>Cristiano Ronaldo
+                            Portuguese footballe</p>
+                    </div>
+                    <div class="card">
+                        <img src="coca.png">
+                        <p>Coca-Cola Company</p>
+                    </div>
+                    <div class="card">
+                        <img src="druv.png">
+                        <p>Dhruv Rathee</p>
+                    </div>
+                    <div class="card">
+                        <img src="modi.png">
+                        <p>Narendra Modi
+                            Prime Minister of India
+                            </p>
+                    </div>
+                    <div class="card">
+                        <img src="speed.png">
+                        <p>IShowSpeed
+                            American YouTuber
+                            </p>
+                    </div>
+                    <div class="card">
+                        <img src="messi.png">
+                        <p>Lionel Messi
+                            Argentine footballer
+                            </p>
+                    </div>
+                    <div class="card">
+                        <img src="gst.png">
+                        <p>Nirmala Sitharaman
+                            Minister of Finance of India
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      <div class="section" id="charts">
+        <h2>Featured Charts</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="drake.png">
+            <p>Drake
+                Canadian rapper and singer
+                </p>
+          </div>
+          <div class="card">
+            <img src="kedrick.png">
+            <p>Kendrick Lamar
+                American rapper
+                </p>
+          </div>
+          <div class="card">
+            <img src="machine.png">
+            <p>Machine Gun Kelly
+                American rapper and singer-songwriter
+                </p>
+          </div>
+          <div class="card">
+            <img src="eme.png">
+            <p>Eminem
+                American rapper and songwriter
+                </p>
+          </div>
+          <div class="card">
+            <img src="rhina.png">
+            <p>The Monster
+                Song by Eminem ‧ 2013
+                </p>
+          </div>
+          <div class="card">
+            <img src="paper.png">
+            <p>Paper Planes
+                Song by M.I.A</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+      
+</body>
+</html>
